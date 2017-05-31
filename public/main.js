@@ -1,35 +1,44 @@
-function drawVK() {
-  var lineDrawingVk = anime({
-    targets: '#vk-svg .lines path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInQuint',
-    duration: 500,
-    delay: function(el, i) { return i * 10 },
-    direction: 'alternate',
-    elasticity: function(el, i, l) {
-      return (200 + i * 200);
-    },
-    // loop: true,
-    autoplay: false
-  })
-}
+var lineDrawing = anime({
+  targets: '.p-lines',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInQuint',
+  duration: 500,
+  delay: function(el, i) { return i * 10 },
+  direction: 'alternate',
+  elasticity: function(el, i, l) {
+    return (200 + i * 200);
+  },
+  loop: true,
+  // autoplay: false
+})
 
-function drawOrig() {
-  var lineDrawingOrig = anime({
-    targets: '#orig line, path, polyline, rect',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInQuint',
-    duration: 500,
-    delay: function(el, i) { return i * 50 },
-    direction: 'alternate',
-    elasticity: function(el, i, l) {
-      return (200 + i * 200);
-    },
-    // loop: true,
-    // autoplay: false
-  })
-  lineDrawingVk.play
-}
+// var lineDrawingVk = anime({
+//   targets: '#vk-svg .lines path',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInQuint',
+//   duration: 500,
+//   delay: function(el, i) { return i * 10 },
+//   direction: 'alternate',
+//   elasticity: function(el, i, l) {
+//     return (200 + i * 200);
+//   },
+//   loop: true,
+//   // autoplay: false
+// })
+//
+// var lineDrawingOrig = anime({
+//   targets: '#orig line, path, polyline, rect',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInQuint',
+//   duration: 500,
+//   delay: function(el, i) { return i * 50 },
+//   direction: 'alternate',
+//   elasticity: function(el, i, l) {
+//     return (200 + i * 200);
+//   },
+//   loop: true,
+//   // autoplay: false
+// })
 
 // var morphing = anime({
 //   targets: '#vk-svg path',

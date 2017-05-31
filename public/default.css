@@ -14,14 +14,7 @@ body {
   position: absolute;
 }
 
-#vk-svg path {
-  display: inline;
-  fill: none;
-  stroke: #d5dde0;
-  stroke-miterlimit: 10;
-}
-
-.originSVG {
+.p-lines {
   display: inline;
   fill: none;
   stroke: #d5dde0;
@@ -32,8 +25,4 @@ body {
   fill: none;
   stroke: #d5dde0;
   stroke-miterlimit: 10;
-}
-
-.st2 {
-  display: none;
 }
