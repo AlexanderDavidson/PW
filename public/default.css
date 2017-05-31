@@ -1,13 +1,36 @@
+body {
+  background-color: #36454c;
+}
+
+#projects {
+  position: absolute;
+}
+
+#proj-br {
+  position: absolute;
+}
+
+#proj-origin {
+  position: absolute;
+}
+
+#vk-svg path {
+  display: inline;
+  fill: none;
+  stroke: #d5dde0;
+  stroke-miterlimit: 10;
+}
+
 .originSVG {
   display: inline;
   fill: none;
-  stroke: #000;
+  stroke: #d5dde0;
   stroke-miterlimit: 10;
 }
 
 .st1 {
   fill: none;
-  stroke: #ff006e;
+  stroke: #d5dde0;
   stroke-miterlimit: 10;
 }
 
