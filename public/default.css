@@ -1,0 +1,16 @@
+.originSVG {
+  display: inline;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #ff006e;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  display: none;
+}
