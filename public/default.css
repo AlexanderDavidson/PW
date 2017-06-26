@@ -2,6 +2,34 @@ body {
   background-color: #36454c;
 }
 
+path {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+polyline {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+line {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+polygon {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
 #projects {
   position: absolute;
 }
@@ -13,6 +41,8 @@ body {
 #proj-origin {
   position: absolute;
 }
+
+
 
 .p-lines {
   display: inline;

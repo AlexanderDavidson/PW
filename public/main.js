@@ -1,14 +1,12 @@
 var lineDrawing = anime({
-  targets: '.p-lines',
+  targets: '.origin',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInQuint',
   duration: 500,
   delay: function(el, i) { return i * 10 },
   direction: 'alternate',
-  elasticity: function(el, i, l) {
-    return (200 + i * 200);
-  },
-  loop: true,
+  elasticity: 200,
+  loop: false,
   // autoplay: false
 })
 
@@ -54,3 +52,5 @@ var lineDrawing = anime({
 // });
 
 document.querySelector('#vk-svg .vkBtn').onclick = drawVk()
+
+document.querySelector('#origin .origBtn').onclick = playPause.restart;
