@@ -1,4 +1,8 @@
-var lineDrawing = anime({
+var $vkBtn = document.querySelector('.vkBtn')
+
+var $origBtn = document.querySelector('.origBtn')
+
+var origDrawing = anime({
   targets: '.origin',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInQuint',
@@ -7,8 +11,23 @@ var lineDrawing = anime({
   direction: 'alternate',
   elasticity: 200,
   loop: false,
-  // autoplay: false
+  autoplay: false
 })
+
+var vkDrawing = anime({
+  targets: '.spinner',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInQuint',
+  duration: 500,
+  delay: function(el, i) { return i * 10 },
+  direction: 'alternate',
+  elasticity: 200,
+  loop: false,
+  autoplay: false
+})
+
+$origBtn.addEventListener('click', function() { origDrawing.play(); });
+$vkBtn.addEventListener('click', function() { vkDrawing.play(); });
 
 // var lineDrawingVk = anime({
 //   targets: '#vk-svg .lines path',
@@ -50,7 +69,3 @@ var lineDrawing = anime({
 //   duration: 2000,
 //   loop: true
 // });
-
-document.querySelector('#vk-svg .vkBtn').onclick = drawVk()
-
-document.querySelector('#origin .origBtn').onclick = playPause.restart
