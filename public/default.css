@@ -42,15 +42,15 @@ polygon {
   position: absolute;
 }
 
-.origin {
+#origin {
   visibility: hidden;
 }
 
-.spinner {
+#spinner {
   visibility: hidden;
 }
 
-.personal_art {
+#personalArt {
   visibility: hidden;
 }
 

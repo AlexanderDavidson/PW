@@ -1,12 +1,17 @@
 var $vkBtn = document.querySelector('.vkBtn')
-
 var $origBtn = document.querySelector('.origBtn')
+
+var $origin = document.querySelector('#origin')
+
+var $spinner = document.querySelector('#spinner')
+
+var $personalArt = document.querySelector('#personal_art')
 
 var origDrawing = anime({
   targets: '.origin',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInQuint',
-  duration: 500,
+  duration: 3000,
   delay: function(el, i) { return i * 10 },
   direction: 'alternate',
   elasticity: 200,
@@ -18,7 +23,7 @@ var vkDrawing = anime({
   targets: '.spinner',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInQuint',
-  duration: 500,
+  duration: 3000,
   delay: function(el, i) { return i * 10 },
   direction: 'alternate',
   elasticity: 200,
@@ -26,8 +31,14 @@ var vkDrawing = anime({
   autoplay: false
 })
 
-$origBtn.addEventListener('click', function() { origDrawing.play(); });
-$vkBtn.addEventListener('click', function() { vkDrawing.play(); });
+$origBtn.addEventListener('click', function() {
+  $origin.style.visibility = "visible";
+  origDrawing.play();
+})
+$vkBtn.addEventListener('click', function() {
+  vkDrawing.play();
+  $spinner.style.visibility = "visible";
+})
 
 // var lineDrawingVk = anime({
 //   targets: '#vk-svg .lines path',

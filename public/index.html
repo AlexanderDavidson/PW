@@ -17,9 +17,16 @@
       <button class="origBtn">Origin</button>
 
       <div class="svg_containter">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="auto"
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
         	 height="100%" viewBox="0 0 3440 1440" xml:space="preserve">
-          <g id="origin">
+          <defs>
+            <filter id="f1" x="0" y="0" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+          </defs>
+          <g id="origin" filter="url(#f1)">
           	<g>
           		<path class="origin" d="M487.25,422.98"/>
           		<path class="origin" d="M1202.55,422.98c-1.74,1.14-3.43,2.36-5.23,3.41c-9.48,5.55-18.95,11.1-28.48,16.55
@@ -1945,7 +1952,7 @@
           			c2.65,2.58,5.28,5.13,8.03,7.8C977.4,864.64,954.56,888.37,949.41,891.98z"/>
           	</g>
           </g>
-          <g id="spinner">
+          <g id="spinner" filter="url(#f1)">
           	<g>
           		<g>
           			<path class="spinner" d="M1408.78,851.49c-5.3-1.15-9.05,2.57-12.97,4.77c-17.86,10.05-35.41,20.65-53.11,30.99
@@ -2670,7 +2677,7 @@
           		</g>
           	</g>
           </g>
-          <g id="personalArt">
+          <g id="personalArt" filter="url(#f1)">
           	<g>
           		<g>
           			<path class="personal_art" d="M1524.37,344.05c-21.33,19.5-42.66,38.99-63.99,58.49c-7.83,7.16-15.63,14.37-23.51,21.48
@@ -3831,7 +3838,7 @@
           		</g>
           	</g>
           </g>
-          <g id="Lines_Primary">
+          <g id="Lines_Primary" filter="url(#f1)">
           	<line class="page_lines" x1="1622" y1="1107" x2="103" y2="1171"/>
           	<line class="page_lines" x1="103" y1="1081" x2="1622" y2="1039"/>
           	<line class="page_lines" x1="1622" y1="1032" x2="103" y2="1074"/>
@@ -3856,7 +3863,7 @@
           	<polyline class="page_lines" points="103,1327 1622,1202 1974.75,1172.71 	"/>
           	<polyline class="page_lines" points="103,1345 1622,1212 1976.19,1180.57 	"/>
           </g>
-          <g id="left_other_lines">
+          <g id="left_other_lines" filter="url(#f1)">
           	<polyline class="page_lines" points="1614.9,1132.5 1624.5,1147 1624.5,1147 	"/>
           	<polyline class="page_lines" points="1614.54,1132.5 1624.5,1147 1621.49,1147.02 	"/>
           	<line class="page_lines" x1="1622" y1="1176" x2="1624.5" y2="1147"/>
@@ -3891,7 +3898,7 @@
           	<polyline class="page_lines" points="1760.5,173 1342.5,118.33 486.33,0.5 	"/>
           	<line class="page_lines" x1="1621.5" y1="321" x2="1621.5" y2="307"/>
           </g>
-          <g id="left_vert">
+          <g id="left_vert" filter="url(#f1)">
           	<line class="page_lines" x1="1621.31" y1="676.69" x2="1621.49" y2="650"/>
           	<line class="page_lines" x1="1620.49" y1="731.76" x2="1620.84" y2="708.71"/>
           	<line class="page_lines" x1="1617.97" y1="901.02" x2="1619.9" y2="771.81"/>
@@ -3908,7 +3915,7 @@
             <polyline class="page_lines" points="1619.9,777 1629.5,772 1629.5,732 	"/>
             <path class="page_lines" d="M1615.91,1039"/>
           </g>
-          <g id="ceiling">
+          <g id="ceiling" filter="url(#f1)">
           	<polyline class="page_lines" points="2046.5,1.09 1711,321 1735.33,325.5 2081.5,1.09 	"/>
           	<polyline class="page_lines" points="2091.75,0.5 1710.5,359 1710.5,368.5 1745,368.5 2158,1.09 	"/>
           	<polyline class="page_lines" points="2171,0 1755,368.5 1805,368.5 2235.5,0 	"/>
@@ -3932,7 +3939,7 @@
             <line class="page_lines" x1="2396" y1="153" x2="2609" y2="0"/>
             <path class="page_lines" d="M1990,0.5"/>
           </g>
-          <g id="right_side">
+          <g id="right_side" filter="url(#f1)">
           	<polygon class="page_lines" points="2573.25,665.74 2289.5,704.5 2243.5,704.5 2243.5,709 2157.5,721.83 2157.6,738.32 2244,727
           		2244.5,724.5 2290,724 2574,691 	"/>
           	<polygon class="page_lines" points="2577.5,711.67 2290.33,738.5 2243.41,739.83 2243.33,743.5 2157.5,750.5 2157.5,768 2243.67,762.33
@@ -4018,7 +4025,7 @@
           	<polyline class="page_lines" points="1873.5,895 1821.5,884 1821.5,916 1873.5,932.38 1873.5,895 	"/>
             <path class="page_lines" d="M1983.72,1125.28"/>
           </g>
-          <g id="floor_lines">
+          <g id="floor_lines" filter="url(#f1)">
           	<path class="page_lines" d="M1622,1032l237.75,98.75c0,0,51.5,23.5-66.5,32S1622.38,1174,1622.38,1174"/>
           	<line class="page_lines" x1="1965.5" y1="1147" x2="1616.02" y2="1009.67"/>
           	<line class="page_lines" x1="1965.5" y1="1132.5" x2="1618.93" y2="1002.06"/>
@@ -4046,7 +4053,7 @@
           	<line class="page_lines" x1="1927.75" y1="1347.25" x2="1507" y2="1440"/>
           	<line class="page_lines" x1="1927.75" y1="1406.5" x2="1806.25" y2="1440"/>
           </g>
-          <g id="Menu_right">
+          <g id="Menu_right" filter="url(#f1)">
             <polyline style="&st2;" points="2808,101.5 3413.5,101.5 3413.5,1125 2807.5,1206.25 2808,101.5 	"/>
           </g>
         </svg>
