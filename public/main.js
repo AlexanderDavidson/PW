@@ -53,4 +53,4 @@ var lineDrawing = anime({
 
 document.querySelector('#vk-svg .vkBtn').onclick = drawVk()
 
-document.querySelector('#origin .origBtn').onclick = playPause.restart;
+document.querySelector('#origin .origBtn').onclick = playPause.restart

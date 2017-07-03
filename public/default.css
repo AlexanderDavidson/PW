@@ -1,33 +1,33 @@
 body {
-  background-color: #36454c;
+  background-color: #01062A;
 }
 
 path {
   fill: none;
-  stroke: black;
+  stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 polyline {
   fill: none;
-  stroke: black;
+  stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 line {
   fill: none;
-  stroke: black;
+  stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 polygon {
   fill: none;
-  stroke: black;
+  stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 #projects {
