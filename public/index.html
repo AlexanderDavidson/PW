@@ -21,9 +21,11 @@
         	 height="100%" viewBox="0 0 3440 1440" xml:space="preserve">
           <defs>
             <filter id="f1" x="0" y="0" width="200%" height="200%">
-              <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
-              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
-              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+              <feBlend in="SourceGraphic" in2="StrokePaint" mode="multiply" />
             </filter>
           </defs>
           <g id="origin" filter="url(#f1)">
@@ -4054,7 +4056,10 @@
           	<line class="page_lines" x1="1927.75" y1="1406.5" x2="1806.25" y2="1440"/>
           </g>
           <g id="Menu_right" filter="url(#f1)">
-            <polyline style="&st2;" points="2808,101.5 3413.5,101.5 3413.5,1125 2807.5,1206.25 2808,101.5 	"/>
+            <polyline
+              style="&st2;"
+              points="2808,101.5 3413.5,101.5 3413.5,1125 2807.5,1206.25 2808,101.5"
+            />
           </g>
         </svg>
       </div>

@@ -13,21 +13,21 @@ polyline {
   fill: none;
   stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 1;
+  stroke-width: 2;
 }
 
 line {
   fill: none;
   stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 1;
+  stroke-width: 2;
 }
 
 polygon {
   fill: none;
   stroke: #F00886;
   stroke-miterlimit: 10;
-  stroke-width: 1;
+  stroke-width: 2;
 }
 
 #projects {
