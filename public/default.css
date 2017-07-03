@@ -1,0 +1,69 @@
+body {
+  background-color: #01062A;
+}
+
+path {
+  fill: none;
+  stroke: #F00886;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+}
+
+polyline {
+  fill: none;
+  stroke: #F00886;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+line {
+  fill: none;
+  stroke: #F00886;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+polygon {
+  fill: none;
+  stroke: #F00886;
+  stroke-miterlimit: 10;
+  stroke-width: 3;
+}
+
+#projects {
+  position: absolute;
+}
+
+#proj-br {
+  position: absolute;
+}
+
+#proj-origin {
+  position: absolute;
+}
+
+#origin {
+  visibility: hidden;
+}
+
+#spinner {
+  visibility: hidden;
+}
+
+#personalArt {
+  visibility: hidden;
+}
+
+
+.p-lines {
+  display: inline;
+  fill: none;
+  stroke: #d5dde0;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #d5dde0;
+  stroke-miterlimit: 10;
+}
