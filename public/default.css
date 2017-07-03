@@ -42,6 +42,17 @@ polygon {
   position: absolute;
 }
 
+.origin {
+  visibility: hidden;
+}
+
+.spinner {
+  visibility: hidden;
+}
+
+.personal_art {
+  visibility: hidden;
+}
 
 
 .p-lines {
